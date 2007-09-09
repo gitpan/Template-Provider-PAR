@@ -11,25 +11,25 @@ use Template::Provider;
 use vars qw(@ISA $VERSION %AZ_ERROR_CODES);
 
 @ISA = qw(Template::Provider);
-use version; $VERSION = qv('0.1.89'); # last digit is SVN revision number
+use version; $VERSION = qv('0.1.102'); # last digit is SVN revision number
 
 # FIXME disallow use of RELATIVE paths?
 
 =head1 NAME
 
-Template::Provider::PAR - Load templates from an embedded PAR archive.
+Template::Provider::PAR - Include templates from a path within a PAR or Zip archive.
 
 =head1 VERSION
 
-This document describes Template::Provider::PAR version 0.1.89.
+This document describes Template::Provider::PAR version 0.1.102.
 
 =head1 SYNOPSIS
 
     use Template;
     use Template::Provider::PAR;
 
-    # Specify the provider in the config for Template::Toolkit.
-    # Note, since no archive name is specified the name of the archive
+    # Specify the provider in the config for Template::Toolkit.  Note,
+    # since no archive name is specified here, the name of the archive
     # will be obtained from $0
     my $tt_config =
     {
@@ -350,7 +350,6 @@ None reported.
 Please report any bugs or feature requests to
 C<bug-template-provider-par at rt.cpan.org>, or through the web interface at
 L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Template-Provider-PAR>.
-
 
 =head1 SUPPORT
 

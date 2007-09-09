@@ -1,15 +1,16 @@
 NAME
-    Template::Provider::PAR - Load templates from an embedded PAR archive.
+    Template::Provider::PAR - Include templates from a path within a PAR or
+    Zip archive.
 
 VERSION
-    This document describes Template::Provider::PAR version 0.1.89.
+    This document describes Template::Provider::PAR version 0.1.102.
 
 SYNOPSIS
         use Template;
         use Template::Provider::PAR;
 
-        # Specify the provider in the config for Template::Toolkit.
-        # Note, since no archive name is specified the name of the archive
+        # Specify the provider in the config for Template::Toolkit.  Note,
+        # since no archive name is specified here, the name of the archive
         # will be obtained from $0
         my $tt_config =
         {

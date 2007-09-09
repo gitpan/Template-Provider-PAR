@@ -1,9 +1,9 @@
 ---
 name: Template-Provider-PAR
-version: 0.1.89
+version: 0.1.102
 author:
   - 'Nick Woolley <npw@cpan.org>'
-abstract: Load templates from an embedded PAR archive
+abstract: Include templates from a path within a PAR or Zip archive
 license: perl
 resources:
   license: http://dev.perl.org/licenses/
@@ -25,7 +25,7 @@ recommends:
 provides:
   Template::Provider::PAR:
     file: lib/Template/Provider/PAR.pm
-    version: 0.1.89
+    version: 0.1.102
 generated_by: Module::Build version 0.2808
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
